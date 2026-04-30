@@ -1,0 +1,113 @@
+package sys.main;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+
+import sys.bean.Company;
+import sys.bean.Course;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int arrayInt [] = new int [3];
+		arrayInt[0] = 26;
+		arrayInt[1] = 28;
+		arrayInt[2] = 40;
+		
+		for(int i = 0; i < arrayInt.length; i++) {
+			
+			System.out.println("arrayInt " + arrayInt[i]);
+			
+		}
+		
+		boolean arrayBool [] = {true, true, false};
+		
+		for(int i = 0; i < arrayBool.length; i++) {
+			
+			System.out.println("arrayInt " + arrayBool[i]);
+			
+		}
+		
+		Course coursesArray [] = new Course[3];
+		coursesArray[0] = new Course("001", "Java SE", "Rome");
+		coursesArray[1] = new Course("002", "Angular", "Milan");
+		coursesArray[2] = new Course("003", "React", "Florence");
+		
+		for (Course course : coursesArray) {
+			
+			System.out.println("coursesArray " + course.toString());
+			
+		}
+		
+		Object array [] = new Object[2];
+		array[0] = new Course("0004", "Spring", "Neaples");
+		array[1] = new Company("123", "company", "Rome");
+		
+		for (Object object : array) {
+			
+			System.out.println("array " + object.toString());
+			
+		}
+		
+		ArrayList<Course> coursesList = new ArrayList<>();
+		Course course1 = new Course("0005", "SQL", "Rome");
+		Course course2 = new Course("0006", "Spark", "Milan");
+		coursesList.add(course1);
+		coursesList.add(course2);
+		
+		coursesList.forEach((course) -> System.out.println("coursesList " + course.toString()));
+		
+		ArrayList<Object> list = new ArrayList<>();
+		Course course3 = new Course("0007", "Apache", "Rome");
+		Company company1 = new Company("345", "company2", "Milan");
+		list.add(course3);
+		list.add(company1);
+		
+		list.forEach((element) -> System.out.println("list " + element.toString()));
+		
+		
+		ArrayList<String> daysList = new ArrayList<>();
+		daysList.add("lunedì");
+		daysList.add("martedì");
+		daysList.add("mercoledì");
+		daysList.add("giovedì");
+		daysList.add("venerdi");
+		daysList.add("sabato");
+		daysList.add("domenica");
+		daysList.add("lunedì");
+		
+		daysList.forEach((day) -> System.out.println("daysList " + day));
+		
+		HashSet<String> daysSet = new HashSet<>();
+		daysSet.add("lunedì");
+		daysSet.add("martedì");
+		daysSet.add("mercoledì");
+		daysSet.add("giovedì");
+		daysSet.add("venerdi");
+		daysSet.add("sabato");
+		daysSet.add("domenica");
+		daysSet.add("lunedì");
+		
+		daysSet.forEach((day) -> System.out.println("daysSet " + day));
+		
+		HashSet<Course> coursesSet = new HashSet<>();
+		Course course4 = new Course("0007", "Apache", "Rome");
+		coursesSet.add(course1);
+		coursesSet.add(course2);
+		coursesSet.add(course3);
+		coursesSet.add(course4);
+		coursesSet.forEach((coursesSet) -> System.out.println("coursesSet " + coursesSet));
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,27 @@
+package com.sistemi.informativi;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Person p1 = new Person();
+		
+		p1.firstName = "Mario";
+		p1.lastName = "Rossi";
+		p1.age = 23;
+		System.out.println(p1.firstName + " " + p1.lastName + " " + p1.age);
+		
+		p1 = null;            
+		
+		Person p2 = new Person();
+		p2.firstName = "Marco";
+		p2.lastName = "Verdi";
+		p2.age = 34;
+		System.out.println(p2.firstName + " " + p2.lastName + " " + p2.age);
+
+		
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package sys;
+
+public class Contatore {
+	
+	// variabile di classe
+	static int x;
+	
+	public void conta() {
+		
+		x = x + 1;
+		System.out.println();
+		
+	}
+
+}

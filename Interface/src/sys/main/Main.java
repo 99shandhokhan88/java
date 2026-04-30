@@ -1,0 +1,24 @@
+package sys.main;
+
+import sys.DocenteJava;
+import sys.DocenteMicrosoft;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		DocenteJava docenteJava = new DocenteJava ();
+		docenteJava.spiegaLinguaggio();
+		docenteJava.spiegaFramework();
+		docenteJava.spiegaArchitettura();
+		
+		System.out.println("-----------------");
+		
+		DocenteMicrosoft docenteMicrosoft = new DocenteMicrosoft ();
+		docenteMicrosoft.spiegaLinguaggio();   
+		docenteMicrosoft.spiegaFramework();
+		docenteMicrosoft.spiegaArchitettura();
+
+	}
+
+}

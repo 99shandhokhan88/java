@@ -1,0 +1,26 @@
+package sys.main;
+
+import sys.AziendaMeccanica;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		AziendaMeccanica aziendaMeccanica = new AziendaMeccanica();
+		aziendaMeccanica.fattura();
+		aziendaMeccanica.produce();
+		aziendaMeccanica.assume();
+		
+		System.out.println("----------");
+		
+		AziendaInformatica aziendaInformatica = new AziendaInformatica();
+		aziendaInformatica.fattura();
+		aziendaInformatica.produce();
+		aziendaInformatica.assume();
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,41 @@
+package sys.main;
+
+import sys.bean.Course;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int arrayInt [] = new int [3];
+		arrayInt[0] = 26;
+		arrayInt[1] = 28;
+		arrayInt[2] = 40;
+		
+		for(int i = 0; i < arrayInt.length; i++) {
+			
+			System.out.println("arrayInt " + arrayInt[i]);
+			
+		}
+		
+		boolean arrayBool [] = {true, true, false};
+		
+		for(int i = 0; i < arrayBool.length; i++) {
+			
+			System.out.println("arrayInt " + arrayBool[i]);
+			
+		}
+		
+		Course coursesArray [] = new Course[3];
+		coursesArray[0] = new Course("001", "Java SE", "Rome");
+		coursesArray[1] = new Course("002", "Angular", "Milan");
+		coursesArray[2] = new Course("003", "React", "Florence");
+		
+		for (Course course : coursesArray) {
+			
+			System.out.println("coursesArray " + course.toString());
+			
+		}
+
+	}
+
+}

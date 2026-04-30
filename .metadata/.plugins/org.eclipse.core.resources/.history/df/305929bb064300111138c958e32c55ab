@@ -1,0 +1,17 @@
+package sys.main;
+
+import sys.AziendaMeccanica;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		AziendaMeccanica aziendaMeccanica = new AziendaMeccanica();
+		aziendaMeccanica.fattura();
+		
+		
+		
+
+	}
+
+}

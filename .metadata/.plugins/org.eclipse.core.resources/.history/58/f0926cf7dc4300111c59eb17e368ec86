@@ -1,0 +1,64 @@
+package sys.main;
+
+import java.util.ArrayList;
+
+import sys.bean.Company;
+import sys.bean.Course;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int arrayInt [] = new int [3];
+		arrayInt[0] = 26;
+		arrayInt[1] = 28;
+		arrayInt[2] = 40;
+		
+		for(int i = 0; i < arrayInt.length; i++) {
+			
+			System.out.println("arrayInt " + arrayInt[i]);
+			
+		}
+		
+		boolean arrayBool [] = {true, true, false};
+		
+		for(int i = 0; i < arrayBool.length; i++) {
+			
+			System.out.println("arrayInt " + arrayBool[i]);
+			
+		}
+		
+		Course coursesArray [] = new Course[3];
+		coursesArray[0] = new Course("001", "Java SE", "Rome");
+		coursesArray[1] = new Course("002", "Angular", "Milan");
+		coursesArray[2] = new Course("003", "React", "Florence");
+		
+		for (Course course : coursesArray) {
+			
+			System.out.println("coursesArray " + course.toString());
+			
+		}
+		
+		Object array [] = new Object[2];
+		array[0] = new Course("0004", "Spring", "Neaples");
+		array[1] = new Company("123", "company", "Rome");
+		
+		for (Object object : array) {
+			
+			System.out.println("array " + object.toString());
+			
+		}
+		
+		ArrayList<Course> coursesList = new ArrayList<>();
+		Course course1 = new Course("0005", "SQL", "Rome");
+		Course course2 = new Course("0006", "Spark", "Milan");
+		coursesList.add(course1);
+		coursesList.add(course2);
+		
+		coursesList.forEach((course) -> System.out.println("coursesList " + course.toString()));
+		
+		
+
+	}
+
+}

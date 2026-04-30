@@ -1,0 +1,53 @@
+package com.sis.Main;
+import com.sis.Person;
+import com.sis.Student;
+import com.sis.StudentSample;
+import com.sis.StudentWorking;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		System.out.println("Person:");
+
+		Person person = new Person();
+		person.eat();
+		person.sleep();
+		person.walk();
+		
+		System.out.println("Student:");
+		
+		Student student = new Student();
+		student.eat();
+		student.sleep();
+		student.walk();
+		student.study();
+		
+		
+		System.out.println("StudentSample:");
+		
+		StudentSample studentSample = new StudentSample();
+		studentSample.eat();
+		studentSample.sleep();
+		studentSample.walk();
+		studentSample.study();
+
+	
+	
+	System.out.println("StudentWorking:");
+	
+	StudentWorking studentWorking = new StudentWorking();
+	studentWorking.eat();
+	studentWorking.sleep();
+	studentWorking.walk();
+	studentWorking.study();
+
+
+	
+	System.out.println("STOP");
+	
+	person.toString();
+
+}

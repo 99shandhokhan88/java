@@ -1,0 +1,14 @@
+package com.sistemi.informativi;
+
+public class Person {
+	
+	
+	/*
+	 *  properties/fields/instance variables
+	 */
+	
+	String firstName;
+	String lastName;
+	int    age;
+
+}

@@ -1,0 +1,24 @@
+package com.sistemi.informativi.main;
+import java.io.PrintStream;
+
+import com.sistemi.informativi.Person;
+
+public class Main {
+
+public static void main(String[] args) {
+	
+	Person p1 = new Person("Mario", "Rossi", 23);
+	
+	System.out.println(p1.getFirstName() + " " + p1.getLastName() + " " + p1.getAge());
+	
+
+	
+
+}
+
+@Override
+public String toString() {
+	return "Main []";
+}
+
+}

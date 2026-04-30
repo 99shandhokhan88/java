@@ -1,0 +1,22 @@
+package sys.main;
+
+import sys.Contatore;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Contatore contatore = new Contatore();
+		
+		contatore.conta();
+		contatore.conta();
+		contatore.conta();
+		contatore.conta();
+		contatore.conta();
+		
+		Contatore contatore2 = new Contatore();
+		contatore.conta();
+		
+	}
+
+}

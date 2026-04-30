@@ -1,0 +1,11 @@
+package com.sis;
+
+public class StudentWorking extends Student{
+	
+	@Override
+	public void study() {
+		
+		System.out.println("working and studying");
+	}
+
+}
