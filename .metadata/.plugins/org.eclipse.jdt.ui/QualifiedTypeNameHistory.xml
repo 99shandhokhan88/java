@@ -3,4 +3,6 @@
     <fullyQualifiedTypeName name="com.sis.Student"/>
     <fullyQualifiedTypeName name="com.sis.StudentSample"/>
     <fullyQualifiedTypeName name="sys.DocenteJava"/>
+    <fullyQualifiedTypeName name="sys.math.Operazione"/>
+    <fullyQualifiedTypeName name="sys.buisness.AgeVerify"/>
 </qualifiedTypeNameHistroy>
